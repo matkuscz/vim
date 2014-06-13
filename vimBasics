@@ -1,5 +1,8 @@
-Základní ovládání VIMu:
+Doporucena literatura:
+ftp://ftp.vim.org/pub/vim/doc/book/vimbook-OPL.pdf
 ********************
+Základní ovládání VIMu:
+#######################
 Normal mod:
 h - kurzor doleva
 j - kurzor dolu
@@ -56,8 +59,11 @@ q - ukonci nahravani makra
 Hledani
 Hledani projizdi buffer porad dokola, nezastavi se na kocnci, ale hlasi to.
 /<Retezec> - kurzor na dalsi vyskyt retezce v otevrenem bufferu
-/ - opakovat posledni vyhledavani
+/ - opakovat posledni vyhledavani popredu
+?<Retezec> - kurzor na predchozi vyskyt retezce
+? - opakovat posledni vyhledavani pozadu
 n - opakovat posledni vyhledavani
+N - opakovat posledni vyhledavani v obracenem poradi :) super featurka
 /<Up> - historie vyhledavani nahoru
 /<Down> - historie vyhledavani dolu
 ********************
@@ -68,3 +74,28 @@ CTRL-Kc0 - vlozi znak Copyright {tohle nevim jak udelat :)}
 POSTFIX prikazy
 :set number - zapne zobrazeni cislovani radku
 :set nonumber - vypne
+:set hlsearch - zapne podbarvovani shody ve vyhledavani
+:set nohlsearch - vypne
+:nohlsearch - smaze aktualni podbarveni
+:set incsearch - zacne vyhledavat po prvnim znaku a zpresnuje se dal {doporucuju zapnout, je to dobra featurka}
+:set noincsearch - vypne
+********************
+Po zapnuti VIMu:
+:set hlsearch
+:set incsearch
+********************
+REGEXPY:
+^ - zacatek radku
+$ - konec radku
+. - jakykoli jeden znak
+********************
+Cut, Paste and Copy:
+Cokoli smazes {prikazy x, d, ...}, text je ulozen a muzes ho vlozit pomoci p.
+p - vlozeni naposledy smazaneho textu za kurzor
+P - vlozeni naposledy smazaneho textu pred kurzor
+xp - prohozeni dvou pismenek {teh -> the}
+********************
+Zalozky {:marks}
+m<Pismeno> - vytvori zalozku na aktualni pozici kurzoru pod Pismeno
+'<Pismeno> - presune kurzor na zalozku Pismeno
+:marks - zobrazi seznam zalozek
