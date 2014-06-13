@@ -1,0 +1,31 @@
+A young stupid camel
+Found programming GNU-UNIX an easy hurdle!!!
+	Ran as Forrest, ran.
+that was very slow
+And that's not saying much for the faggots!!!
+********************
+To err is human. To realy foul up you need a computer.
+********************
+<p>
+To <b>generate</b> a table of contents
+all the C <b>program</b> files in your
+current working directory, use the
+<b>command</b>.
+<pre>
+	$<b>ctags *.c</b>
+</pre>
+</p>
+********************
+This is a test with two
+or more
+lines
+********************
+This iz a test.
+&&&&&iz a test.
+********************
+now IS THE TIMe ...
+********************
+#include "stdio.h"
+#include "fcntl.h"
+#include "uninst.h"
+#include "stdlib.h"

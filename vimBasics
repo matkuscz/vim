@@ -1,0 +1,70 @@
+Základní ovládání VIMu:
+********************
+Normal mod:
+h - kurzor doleva
+j - kurzor dolu
+k - kurzor nahoru
+l - kurzor doprava
+
+i - vstoupit do INSERT modu
+o - otevrit novy radek pod kurzorem a prejit do INSERT modu
+
+x - smazat znak pod kurzorem
+dd - smazat radek pod kurzorem
+dw - smazat slovo pod kurzorem
+d<Motion> - smaze az po konec Motion
+d3w - smaze tri slova
+3dw - smaze tri slova
+d$ - smaze do konce radku
+D - smaze do konce radku {zkratka}
+d^ - smaze do zacatku radku
+
+c<Motion> - zmenit text do konce Motion {smazat a vstoupit do INSERT m.} 
+cw - zmenit slovo
+cc - zmenit radek
+r<Znak> - nahradi znak pod kurzorem Znakem
+^5r& - nahradi prvnich pet znaku znakem ampersand
+
+~ - zmeni velikost znaku pod kurzorem {lze uvest pocet znaku}
+
+. - opakuj posledni smazani nebo zmenu
+
+J - spoji radky {muzeme zadat i pocet}
+
+u - undo
+<CTRL> R - redo
+
+w - kurzor na zacatek dalsiho slova
+b - kurzor na zacatek predchoziho slova
+f<znak> - kurzor na dalsi vyskyt znaku
+F<znak> - kurzor na predchozi vyskyt znaku
+t<znak> - kurzor pred dalsi vyskyt znaku {search till}
+T<znak> - kurzor pred predchozi vyskyt znaku
+
+<cislo>G - kurzor na radek cislo
+G - kurzor na konec souboru
+
+CTRL-u - posunout o obrazovku nahoru
+CTRL-d - posunout o obrazovku dolu
+
+CTRL-G - ukaze stavovy radek {umisteni kurzoru}
+
+q<Znak{pismeno nebo cislo asi ?}> - spusti nahravani makra do bufferu Znak
+q - ukonci nahravani makra
+@<Znak> - prehraje makro z bufferu Znak
+********************
+Hledani
+Hledani projizdi buffer porad dokola, nezastavi se na kocnci, ale hlasi to.
+/<Retezec> - kurzor na dalsi vyskyt retezce v otevrenem bufferu
+/ - opakovat posledni vyhledavani
+n - opakovat posledni vyhledavani
+/<Up> - historie vyhledavani nahoru
+/<Down> - historie vyhledavani dolu
+********************
+Specialni znaky {:digraphs}
+CTRL-Kc0 - vlozi znak Copyright {tohle nevim jak udelat :)} 
+¡ - vytvoreno pomoci CTRL-K~!
+********************
+POSTFIX prikazy
+:set number - zapne zobrazeni cislovani radku
+:set nonumber - vypne
