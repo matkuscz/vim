@@ -108,10 +108,34 @@ m<Pismeno> - vytvori zalozku na aktualni pozici kurzoru pod Pismeno
 :marks - zobrazi seznam zalozek
 ********************
 Buffery
+:buffers
 :ls, :files - zobrazi vsechny otevrene buffery, jejich cisla a jmena
 <Cislo><Ctrl>^ - prejit na buffer Cislo
 <Ctrl>^ - prejde na naposledy otevreny buffer
 :e <Cesta k souboru> - vytvori novy buffer ze zadaneho souboru
+:bnext - prejdi na dalsi buffer
+:bprevious, :bNext- prejdi na predchozi buffer
+********************
+Rozdeleni okna {:split}
+:split - rozdeli okno na dve a v obou zobrazi aktualni buffer
+:split <cesta_k_souboru> - rozdeli okno a nacte do nej soubor
+:<cislo> split - nove okno bude mit pocet radku dle cisla
+<Ctrl>w<Ctrl>w - cykluje mezi okny
+<Ctrl>w<Ctrl>h,j,k,l - presune se na okno ve smeru
+<Ctrl>w c - zavre okno
+:new - rozdeli okno a v obou zobrani novy buffer
+<Ctrl>w + - zvetsi okno o pocet radku(default = 1)
+<Ctrl>w - - zmensi velikost okna o pocet radku
+<Ctrl>w = - velikost obou oken se vyrovna
+:hide - skryje aktivni buffer
+:set hidden - kdyz zaviras soubor, stane se naktivnim
+:sbuffer <cislo> - otevre buffer cislo v novem okne(splitu)
+Stavove priznaky bufferu:
+- neaktivni buffer
+h skryty buffer
+% aktivni buffer
+# alternativni buffer
++ soubor byl modifikovan
 ********************
 VIMRC
 :scriptnames - zobrazi seznam konfiguracnich souboru, ktere se zavadeji pri startu VIMu
