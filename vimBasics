@@ -151,3 +151,12 @@ Nejprve nainstalovat PATHOGEN:
 call pathogen#runtime_append_all_bundles()
 do ~/.vimrc
 - vytvorit slozku ~/.vim/bundle a do ni potom stahuj pluginy
+NERDTree
+--------
+Modul na zobrazeni adresarove struktury.
+:NERDTree - prikaz na zapnuti
+
+Taglist
+-------
+Nacita si informace o tridach ve vsech otevrenych bufferech a da se po nich navigovat
+:TlistOpen
