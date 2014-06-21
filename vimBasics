@@ -79,6 +79,8 @@ POSTFIX prikazy
 :nohlsearch - smaze aktualni podbarveni
 :set incsearch - zacne vyhledavat po prvnim znaku a zpresnuje se dal {doporucuju zapnout, je to dobra featurka}
 :set noincsearch - vypne
+:set nocompatible - vypne rezim kompatibility s VI
+:set nocompatible? - zjisti, jestli jsme v rezimu kompatibility s VI
 ********************
 Po zapnuti VIMu:
 :set hlsearch
@@ -94,8 +96,34 @@ Cokoli smazes {prikazy x, d, ...}, text je ulozen a muzes ho vlozit pomoci p.
 p - vlozeni naposledy smazaneho textu za kurzor
 P - vlozeni naposledy smazaneho textu pred kurzor
 xp - prohozeni dvou pismenek {teh -> the}
+Yanking {kopirovani}
+yy - yankne radek
+p - vlozi yaknutou vec za kurzor
+ma posun y'a p - oznacime zacatek textu, presuneme se na konec, yankneme od konce do znacky zacatku a potom muzeme text vlozit pomoci p
+Y - yankne jeden radek
 ********************
 Zalozky {:marks}
 m<Pismeno> - vytvori zalozku na aktualni pozici kurzoru pod Pismeno
 '<Pismeno> - presune kurzor na zalozku Pismeno
 :marks - zobrazi seznam zalozek
+********************
+Buffery
+:ls, :files - zobrazi vsechny otevrene buffery, jejich cisla a jmena
+<Cislo><Ctrl>^ - prejit na buffer Cislo
+<Ctrl>^ - prejde na naposledy otevreny buffer
+:e <Cesta k souboru> - vytvori novy buffer ze zadaneho souboru
+********************
+VIMRC
+:scriptnames - zobrazi seznam konfiguracnich souboru, ktere se zavadeji pri startu VIMu
+:e $MYVIMRC - otevre buffer s kunfiguracnim souborem pro spustenou seanci
+<Ctrl>g - zobrazi cestu k souboru ve status baru - tohle mi zrovna nepomuze, mam asi zaple symbolicke adresy
+:version - zobrazi informace o konfiguracnich souborech (global, uzivatele) a dalsi zajmavosti
+********************
+Pluginy
+Nejprve nainstalovat PATHOGEN:
+- zkopirovat pathogen.vim do ~/.vim/autoload
+	https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+- pridat:
+call pathogen#runtime_append_all_bundles()
+do ~/.vimrc
+- vytvorit slozku ~/.vim/bundle a do ni potom stahuj pluginy
