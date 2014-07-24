@@ -101,6 +101,7 @@ yy - yankne radek
 p - vlozi yaknutou vec za kurzor
 ma posun y'a p - oznacime zacatek textu, presuneme se na konec, yankneme od konce do znacky zacatku a potom muzeme text vlozit pomoci p
 Y - yankne jeden radek
+"*p - vlozeni radku ze systemoveho bufferu ( dalsi varianta je "+p )
 ********************
 Zalozky {:marks}
 m<Pismeno> - vytvori zalozku na aktualni pozici kurzoru pod Pismeno
