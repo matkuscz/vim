@@ -60,6 +60,9 @@ q<Znak{pismeno nebo cislo asi ?}> - spusti nahravani makra do bufferu Znak
 q - ukonci nahravani makra
 @<Znak> - prehraje makro z bufferu Znak
 ********************
+Insert mod:
+<CTRL + V> klavesa - vlozeni znaku klavesa (napr. <TAB>)
+********************
 Hledani
 Hledani projizdi buffer porad dokola, nezastavi se na kocnci, ale hlasi to.
 /<Retezec> - kurzor na dalsi vyskyt retezce v otevrenem bufferu
