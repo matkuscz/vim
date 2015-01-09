@@ -123,6 +123,8 @@ Buffery
 :e <Cesta k souboru> - vytvori novy buffer ze zadaneho souboru
 :bnext - prejdi na dalsi buffer
 :bprevious, :bNext- prejdi na predchozi buffer
+:bd - zavri aktualni buffer
+:vsp bN - otevre vertikalni split a v nem buffer N
 ********************
 Rozdeleni okna {:split}
 :split - rozdeli okno na dve a v obou zobrazi aktualni buffer
