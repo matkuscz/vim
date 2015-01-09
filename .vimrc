@@ -33,3 +33,10 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+"C Programming
+set exrc
+set secure
+
+"CtrlP
+:map <C-f> :CtrlP<CR>
