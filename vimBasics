@@ -88,6 +88,7 @@ POSTFIX prikazy
 :set noincsearch - vypne
 :set nocompatible - vypne rezim kompatibility s VI
 :set nocompatible? - zjisti, jestli jsme v rezimu kompatibility s VI
+:syntax on - zapne obarvovani syntaxe
 ********************
 Po zapnuti VIMu:
 :set hlsearch
@@ -124,7 +125,7 @@ Buffery
 :bnext - prejdi na dalsi buffer
 :bprevious, :bNext- prejdi na predchozi buffer
 :bd - zavri aktualni buffer
-:vsp bN - otevre vertikalni split a v nem buffer N
+:vsp | bN - otevre vertikalni split a v nem buffer N, bacha na tu rouru tam !
 ********************
 Rozdeleni okna {:split}
 :split - rozdeli okno na dve a v obou zobrazi aktualni buffer
@@ -133,6 +134,7 @@ Rozdeleni okna {:split}
 <Ctrl>w<Ctrl>w - cykluje mezi okny
 <Ctrl>w<Ctrl>h,j,k,l - presune se na okno ve smeru
 <Ctrl>w c - zavre okno
+<Ctrl>w r - prohodi okna
 :new - rozdeli okno a v obou zobrani novy buffer
 <Ctrl>w + - zvetsi okno o pocet radku(default = 1)
 <Ctrl>w - - zmensi velikost okna o pocet radku
@@ -140,6 +142,7 @@ Rozdeleni okna {:split}
 :hide - skryje aktivni buffer
 :set hidden - kdyz zaviras soubor, stane se naktivnim
 :sbuffer <cislo> - otevre buffer cislo v novem okne(splitu)
+*********************
 Stavove priznaky bufferu:
 - neaktivni buffer
 h skryty buffer
