@@ -1,0 +1,40 @@
+Promazani nastaveni
+rm -rf ~/.vim/*
+rm -rf ~/.vimrc
+
+
+Otevreni souboru bez jakyhokoli nastaveni
+vi -Nu NORC soubor.c
+
+Prvni X komand
+:filetype plugin indent on  ---- detekce typu souboru
+:filetype detect ----rucne zdetekuje typ souboru
+:set filetype? ----jaky typ souboru je zdetekovan ?
+
+:syntax on 
+
+
+mkdir ~/.vim
+
+vi ~/.vim/vimrc ----- sem cpat svoje nastaveni
+
+:so %   ---- sourcni aktualni soubor
+
+FILEMARKY
+mV - pridas marku
+apostrofe v - skocis na marklej soubor
+
+
+:retab   --- prejebej TABy podle aktualniho nastaveni
+
+
+
+Umistit soubor pro nastaveni pro C do odpovidajiciho AFTER adresare - aplikuje se az po nastaveni pluginu atp...
+Pro python treba
+$HOME/.vim/after/ftplugin/pythin.vim
+
+
+: sipka nahoru - comand historie,
+  pak muzes ctfl+f v tom hledat
+
+:e $RTP --- muzu editovat soubor, kterej je definovanej jako promenna v vimrc
